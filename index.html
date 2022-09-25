@@ -9,7 +9,7 @@
     <title>Checkout</title>
 </head>
 
-<body>
+<body class="bg-light">
     <div class="container d-sm-flex flex-row-reverse bg-light">
         <div class="col-sm-6">
             <div class="d-flex justify-content-between pt-4 pb-2">
@@ -108,7 +108,7 @@
                     <div class="form-group col-sm-5">
                         <label for="inputCountry">Country</label>
                         <select id="inputCountry" class="form-control">
-                            <option selected>Choose...</option>
+                            <option value="default" selected>Choose...</option>
                             <option value="us">USA</option>
                             <option value="hu">Hungary</option>
                         </select>
@@ -146,21 +146,21 @@
             </div>
             <form>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="checkCreditCard" id="checkCreditCard"
+                    <input class="form-check-input" type="radio" name="checkPayment" id="checkCreditCard"
                         value="creditCard" checked>
                     <label class="form-check-label" for="checkCreditCard">
                         Credit card
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="checkDebitCard" id="checkDebitCard"
+                    <input class="form-check-input" type="radio" name="checkPayment" id="checkDebitCard"
                         value="debitCard">
                     <label class="form-check-label" for="checkDebitCard">
                         Debit card
                     </label>
                 </div>
                 <div class="form-check mb-2">
-                    <input class="form-check-input" type="radio" name="checkPayPal" id="checkPayPal" value="payPal">
+                    <input class="form-check-input" type="radio" name="checkPayment" id="checkPayPal" value="payPal">
                     <label class="form-check-label" for="checkPayPal">
                         PayPal
                     </label>
@@ -173,7 +173,7 @@
                     </div>
                     <div class="form-group col-sm-6">
                         <label for="inputCreditCardNumber" class="form-label">Credit card number</label>
-                        <input type="number" class="form-control" id="inputCreditCardNumber"
+                        <input type="text" class="form-control" id="inputCreditCardNumber"
                             aria-label="CreditCardNumber">
                     </div>
                 </div>
@@ -184,7 +184,7 @@
                     </div>
                     <div class="form-group col-sm-3">
                         <label for="inputCVV" class="form-label">CVV</label>
-                        <input type="number" class="form-control" id="inputCVV" aria-label="CVV">
+                        <input type="text" maxlength="3" class="form-control" id="inputCVV" aria-label="CVV">
                     </div>
                 </div>
                 <hr class="mb-4" />
@@ -193,6 +193,7 @@
         </div>
     </div>
 
+    <script src="./main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
