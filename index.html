@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Checkout</title>
+</head>
+
+<body>
+    <div class="container d-sm-flex flex-row-reverse bg-light">
+        <div class="col-sm-6">
+            <div class="d-flex justify-content-between pt-4 pb-2">
+                <h4 class="text-secondary">Your cart</h4>
+                <h4>
+                    <span class="badge badge-pill badge-lg badge-secondary">3</span>
+                </h4>
+            </div>
+            <ul class="list-unstyled">
+                <li class="list-group-item d-flex justify-content-between">
+                    <div>
+                        <h6 class="mb-0">Product name</h6>
+                        <span class="text-muted small">Brief description</span>
+                    </div>
+                    <span class="text-muted">$12</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                    <div>
+                        <h6 class="mb-0">Second product</h6>
+                        <span class="text-muted small">Brief description</span>
+                    </div>
+                    <span class="text-muted">$8</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                    <div>
+                        <h6 class="mb-0">Third item</h6>
+                        <span class="text-muted small">Brief description</span>
+                    </div>
+                    <span class="text-muted">$5</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between bg-light">
+                    <div>
+                        <h6 class="mb-0 text-success">Promo code</h6>
+                        <span class="small text-success">EXAMPLECODE</span>
+                    </div>
+                    <span class="text-success">-$5</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                    <div>
+                        <h6 class="mb-0 font-weight-normal">Total (USD)</h6>
+                    </div>
+                    <span class="font-weight-bold">$20</span>
+                </li>
+            </ul>
+            <ul class="list-unstyled">
+                <li class="list-group-item p-2">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Promo code" aria-label="Promo code">
+                        <div class="input-group-append">
+                            <button class="btn btn-secondary" type="button">Redeem</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="col-sm-6">
+            <div class="d-flex justify-content-between mt-4 mb-2">
+                <h4 class="">Billing address</h4>
+            </div>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-sm-6">
+                        <label for="inputFirstName" class="form-label">First name</label>
+                        <input type="name" class="form-control" id="inputFirstName" aria-label="Firstname">
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label for="inputLastName" class="form-label">Last name</label>
+                        <input type="name" class="form-control" id="inputLastName" aria-label="Lastname">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputUserName" class="form-label">Username</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Username" id="inputUserName"
+                            aria-label="Username">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+                    <input type="text" class="form-control" placeholder="you@example.com" id="inputEmail"
+                        aria-label="Email">
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress" class="form-label">Address</label>
+                    <input type="text" class="form-control" placeholder="1234 Main St" id="inputAddress"
+                        aria-label="Address">
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress2">Address 2 <span class="text-muted">(Optional)</span></label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment or suite">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-sm-5">
+                        <label for="inputCountry">Country</label>
+                        <select id="inputCountry" class="form-control">
+                            <option selected>Choose...</option>
+                            <option value="us">USA</option>
+                            <option value="hu">Hungary</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-sm-4">
+                        <label for="inputState">State</label>
+                        <select id="inputState" class="form-control">
+                            <option selected>Choose...</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-sm-3">
+                        <label for="inputZip">Zip</label>
+                        <input type="text" class="form-control" id="inputZip">
+                    </div>
+                </div>
+                <hr />
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Shipping address is the same as my billing address
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Save this information for next time
+                        </label>
+                    </div>
+                </div>
+                <hr />
+            </form>
+            <div class="d-flex justify-content-between mt-4 mb-2">
+                <h4 class="">Payment</h4>
+            </div>
+            <form>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="checkCreditCard" id="checkCreditCard"
+                        value="creditCard" checked>
+                    <label class="form-check-label" for="checkCreditCard">
+                        Credit card
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="checkDebitCard" id="checkDebitCard"
+                        value="debitCard">
+                    <label class="form-check-label" for="checkDebitCard">
+                        Debit card
+                    </label>
+                </div>
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="radio" name="checkPayPal" id="checkPayPal" value="payPal">
+                    <label class="form-check-label" for="checkPayPal">
+                        PayPal
+                    </label>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-sm-6">
+                        <label for="inputNameOnCard" class="form-label">Name on card</label>
+                        <input type="name" class="form-control" id="inputNameOnCard" aria-label="NameOnCard">
+                        <span class="text-muted small">Full name as displayed on card</span>
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label for="inputCreditCardNumber" class="form-label">Credit card number</label>
+                        <input type="number" class="form-control" id="inputCreditCardNumber"
+                            aria-label="CreditCardNumber">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-sm-3">
+                        <label for="inputExpiration" class="form-label">Expiration</label>
+                        <input type="text" class="form-control" id="inputExpiration" aria-label="Expiration">
+                    </div>
+                    <div class="form-group col-sm-3">
+                        <label for="inputCVV" class="form-label">CVV</label>
+                        <input type="number" class="form-control" id="inputCVV" aria-label="CVV">
+                    </div>
+                </div>
+                <hr class="mb-4" />
+            </form>
+            <button type="button" class="btn btn-primary btn-lg btn-block mb-4">Continue to checkout</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
